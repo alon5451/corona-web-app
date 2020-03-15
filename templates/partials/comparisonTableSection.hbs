@@ -1,0 +1,21 @@
+<div class="compTablesSection">
+    {{>comparisonTable}}
+    {{>comparisonTable}}
+    {{>comparisonTable}}
+    {{>comparisonTable}}
+    {{>comparisonTable}}
+    {{>comparisonTable}}
+    {{>comparisonTable}}
+    {{>comparisonTable}}
+</div>
+
+
+<script>
+    const compTables = $('.compareBox')
+    const ids = ['perMillion', 'totalCases', 'newCases', 'totalDeaths', 'newDeaths', 'totalRecovered', 'activeCases', 'criticalCases']
+    
+    for (let i=0; i<8; i++) {
+        $(compTables[i]).attr('id', ids[i])
+        // $(compTables[i]).find('.titleDiv').css({'background-color':'#65b1ef' + i.toString() + i.toString()})
+    }
+</script>
