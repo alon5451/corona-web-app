@@ -23,12 +23,12 @@ fetchData('./countries-last-report', (data) => {
     console.log(totalData)
     const insertValues = [
         {id: 'perMillion', title: 'מספר חולים / מיליון אזרחים', propertyName: totCases, bgColor: '#65b1ef33'},
-        {id: 'totalCases', title: 'מספר חולים', propertyName: 'TotalCases', bgColor: '#ef656e33'},
+        {id: 'totalCases', title: 'מספר אנשים שחלו', propertyName: 'TotalCases', bgColor: '#ef656e33'},
         {id: 'newCases', title: 'מקרים חדשים', propertyName: 'NewCases', bgColor: '#70ef6533'},
         {id: 'totalDeaths', title: 'מקרי מוות', propertyName: 'TotalDeaths', bgColor: '#efaf6533'},
         {id: 'newDeaths', title: 'מקרי מוות חדשים', propertyName: 'NewDeaths', bgColor: '#ef65c733'},
         {id: 'totalRecovered', title: 'מקרי החלמה', propertyName: 'TotalRecovered', bgColor: '#efaf6533'},
-        {id: 'activeCases', title: 'מקרים פעילים', propertyName: 'ActiveCases', bgColor: '#ef656533'},
+        {id: 'activeCases', title: 'כרגע חולים', propertyName: 'ActiveCases', bgColor: '#ef656533'},
         {id: 'criticalCases', title: 'חולים במצב קשה', propertyName: 'Serious,Critical', bgColor: '#ef65b433'},
     ]
     $('.compareBox').css({'animation':'none'})

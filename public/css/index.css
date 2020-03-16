@@ -131,17 +131,28 @@ body {
 }
 
 .chartDiv {
-    position: relative;
-    width: 34%;
-    /* height: 400px;; */
-    float: left;
+    /* position: relative; */
+    display: flex;
+    width: 40%;
+    height: 60%;
+    /* background-color: cadetblue; */
+    /* float: center; */
     border-radius: 5px;
-    /* border: 1px solid black; */
+    border-bottom: 1px solid antiquewhite;
     /* background-color: ghostwhite; */
-    box-shadow: 0px 0px 10px 1px gray;
-    margin: 3%;
+    /* box-shadow: 0px 0px 2px 1px gray; */
+    /* margin-top: 3%; */
+    margin-right: auto;
+    margin-left: auto;
+    
 }
 
 .PatientsLineChart {
     /* height: 20%; */
+}
+
+.empty {
+    height: 35px;
+    width: 100%;
+    display: flex;
 }
